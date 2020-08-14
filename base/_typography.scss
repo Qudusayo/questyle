@@ -1,0 +1,42 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+
+@each $var in (100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, bold, bolder) {
+    .fw-#{$var}{
+        font-weight: #{$var};
+    }
+}
+
+.txt-dark{
+    color: $black;
+}
+
+.txt-light{
+    color: $white;
+}
+
+.txt-brown{
+    color: $brown;
+}
+.txt-red{
+    color: $red;
+}
+.txt-green{
+    color: $green;
+}
+.txt-blue{
+    color: $blue;
+}
+.txt-pink{
+    color: $pink;
+}
+.txt-yellow{
+    color: $yellow;
+}
+.txt-l-blue{
+    color: $l-blue;
+}
+.txt-grey{
+    color: $grey;
+}

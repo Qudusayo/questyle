@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    font-family: $initial-font;
+}
+
+.bg-white{
+    background-color: $white;
+}
+.bg-black{
+    background-color: $black;
+}
+.bg-brown{
+    background-color: $brown;
+}
+.bg-red{
+    background-color: $red;
+}
+.bg-green{
+    background-color: $green;
+}
+.bg-blue{
+    background-color: $blue;
+}
+.bg-pink{
+    background-color: $pink;
+}
+.bg-yellow{
+    background-color: $yellow;
+}
+.bg-l-blue{
+    background-color: $l-blue;
+}
+.bg-grey{
+    background-color: $grey;
+}
+
+@each $var in (block, flex, grid, inline) {
+    .#{$var}{
+        display: #{$var};
+    }
+}
+
+.stroke {
+    border-top: 1.5px solid $black;
+}

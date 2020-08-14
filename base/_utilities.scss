@@ -1,0 +1,69 @@
+@for $var from 1 to 100 {
+    .w-#{$var}{
+        width: $var * 1%;
+    }
+} 
+
+@each $var in (auto) {
+    .m-#{$var}{
+        margin: auto;
+    }
+    .ml-#{$var}{
+        margin-left: auto;
+    }
+    .mr-#{$var}{
+        margin-right: auto;
+    }
+}
+
+@for $var from 0 to 16 {
+    .p-#{$var}{
+        padding: $var * 1em;
+    }
+    .py-#{$var}{
+        padding-top: $var * 1em;
+        padding-bottom: $var * 1em;
+    }
+    .px-#{$var}{
+        padding-right: $var * 1em;
+        padding-left: $var * 1em;
+    }
+    .pt-#{$var}{
+        padding-top: $var * 1em;
+    }
+    .pr-#{$var}{
+        padding-right: $var * 1em;
+    }
+    .pl-#{$var}{
+        padding-left: $var * 1em;
+    }
+    .pb-#{$var}{
+        padding-bottom: $var * 1em;
+    }
+}
+
+@for $var from 0 to 16 {
+    .m-#{$var}{
+        margin: $var * 1em;
+    }
+    .my-#{$var}{
+        margin-top: $var * 1em;
+        margin-bottom: $var * 1em;
+    }
+    .mx-#{$var}{
+        margin-right: $var * 1em;
+        margin-left: $var * 1em;
+    }
+    .mt-#{$var}{
+        margin-top: $var * 1em;
+    }
+    .mr-#{$var}{
+        margin-right: $var * 1em;
+    }
+    .ml-#{$var}{
+        margin-left: $var * 1em;
+    }
+    .mb-#{$var}{
+        margin-bottom: $var * 1em;
+    }
+}
